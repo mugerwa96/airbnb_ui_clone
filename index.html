@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="bg-gray-100/10 text-slate-700 font-Poppins">
+
+     <!-- Nvvigation__bar -->
+    <header class="bg-center bg-no-repeat bg-cover md:h-[60vh] "
+     style="background-image: url('./assets/img/forgot-password-office-dark.jpeg')">
+
+        <div class="items-center justify-between w-full md:flex md:max-w-4xl md:mx-auto">
+
+            <!-- flex__container -->
+            <div class="flex items-center justify-between p-3 ">
+                <!-- left__side -->
+                <div>
+                    <p class="text-2xl font-bold text-white">A</p>
+                </div>
+                <!-- right__side -->
+                <div class="md:hidden">
+                    <a href="#" class="text-white">|||</a>
+                </div>
+            </div>
+
+            <!-- menu -items -->
+            <div class="text-white">
+                <ul class="hidden text-sm md:flex md:space-x-4">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- hero__section -->
+        <div class="p-4 mx-auto space-y-3 text-white md:max-w-3xl md:mt-5">
+            <h1 class="text-3xl font-bold ">Book a trip.Host travels.All On Airbnb.</h1>
+            <!-- flex__container -->
+            <div class="items-center gap-3 space-y-4 md:flex md:space-y-0">
+
+                <!-- left__side -->
+                <div>
+                    <p class="mb-2 text-xs">find places to stay and things to do.</p>
+                    <button class="w-full py-1 font-bold text-black bg-white rounded shadow">Expore</button>
+                </div>
+                <!-- right__side -->
+                <div>
+                    <p class="mb-2 text-xs">Earn money from your extra space.</p>
+                    <button class="w-full py-1 text-white border-2 border-white rounded hadow">Host</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- hero__section -->
+
+    </header>
+    <!-- Nvvigation__bar -->
+
+    <!-- booking -->
+    <div class="p-4 mx-auto md:max-w-4xl md:space-y-6 md:mt-5">
+        <h1 class="font-bold text-slate-800 md:text-xl">Book unique homes and experiences</h1>
+
+        <!-- flex__container -->
+        <div class="space-y-2 md:flex md:space-y-0 md:gap-2">
+
+            <!-- left__side -->
+            <div>
+                <label class="my-2 text-xs font-bold ">Where</label>
+                <input type="text" name=""
+                    class="w-full border border-gray-800 rounded active:outline-none focus:outline-none focus:ring-0 focus:placeholder-transparent"
+                    placeholder="any where" id="">
+            </div>
+
+            <!-- middle__side -->
+            <div>
+                <div>
+                    <label class="my-2 text-xs font-bold ">Check-in-checkout</label>
+                    <input type="date" name=""
+                        class="w-full border border-gray-800 rounded active:outline-none focus:outline-none focus:ring-0 focus:placeholder-transparent"
+                        placeholder="any where" id="">
+                </div>
+            </div>
+
+            <!-- right__side -->
+            <div>
+                <div>
+                    <label class="my-2 text-xs font-bold ">Guests</label>
+                    <br>
+                    <select name="" class="w-full rounded active:outline-none focus:outline-none focus:ring-0" id="">
+                        <option value="">1 guest</option>
+                        <option value="">2 guest</option>
+                        <option value="">3 guest</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- guests -->
+    <div class="p-4 mx-auto md:max-w-4xl md:space-y-6 md:mt-5">
+        <h1 class="font-bold text-slate-900 md:text-xl md:leading-4 md:mb-4">What guests are saying about homes in Kampala</h1>
+        <small class="text-xs md:text-sm md:leading-4">Kampala homes were rated <span class="font-bold">4.8 out of 5 stars</span> with <span
+                class="font-bold md:leading-4">42,500,000 + reviews</span></small>
+
+        <!-- card__container -->
+        <div class="grid grid-cols-1 gap-3 md:grid-cols-3">
+
+            <template x-data x-for="1 in 4">
+                <!-- card -->
+                <div class="my-3 overflow-hidden bg-white rounded shadow-md">
+                    <img src="./assets/img/landing.jpeg" class="w-full h-[12rem] bg-contain  " alt="">
+                    <!-- content -->
+                    <div class="p-2 space-y-2">
+                        <div class="flex items-center">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-4 h-4 text-cyan-900">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-4 h-4 text-cyan-900">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-4 h-4 text-cyan-900">
+                                    <path fill-rule="evenodd"
+                                        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </div>
+                        <p class="text-xs md:leading-4">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique nobis delectus
+                            repudiandae recusandae, quo atque hic provident tenetur culpa fugit ab minus natus!
+                        </p>
+
+                        <div class="flex items-center gap-2">
+                            <img src="./assets/img/landing.jpeg" class="w-10 h-10 bg-contain rounded-full" alt="">
+                            <div>
+                                <p class="text-xs font-bold">Alpha</p>
+                                <p class="text-xs">Namugongo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+
+        </div>
+    </div>
+    <!-- guests -->
+
+    <!-- travel -->
+    <div class="p-4 mx-auto md:max-w-4xl md:space-y-6 md:mt-5">
+        <h1 class="mb-2 font-bold border-b-2 border-slate-400 md:text-xl">Travel with Airbnb</h1>
+
+        <!-- flex__container -->
+        <div class="grid grid-cols-1 gap-4 border-b-2 md:grid-cols-3 md:mt-6 ">
+
+
+            <!-- card__container -->
+            <div class="mb-3 space-y-3">
+
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-cyan-900">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                    </svg>
+
+                </span>
+
+                <!-- content -->
+                <div class="space-y-2">
+                    <h1 class="text-sm font-bold md:text-base">24/7 customer suppport</h1>
+                    <p class="text-xs md:leading-4">Day or night,we're here for you.Talk to our support team from anywhere in the
+                        world,any hours of day.</p>
+                </div>
+
+            </div>
+
+            <!-- card__container -->
+
+
+            <div class="mb-3 space-y-3">
+
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-cyan-900">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+
+
+                </span>
+                <!-- content -->
+                <div class="space-y-2">
+                    <h1 class="text-sm font-bold md:text-base">Global Hospitality</h1>
+                    <p class="text-xs md:leading-4">
+                        Guests review their hosts after each stay.All hosts must maintain a minimum rating and our
+                        hospitality standards to be on Airbnb
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- card__container -->
+            <div class="mb-3 space-y-3">
+
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-cyan-900">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                    </svg>
+
+
+
+                </span>
+                <!-- content -->
+                <div class="space-y-2">
+                    <h1 class="text-sm font-bold md:text-base">5 Start hosts</h1>
+                    <p class="text-xs md:leading-4">
+                        Guests review their hosts after each stay.All hosts must maintain a minimum rating and our
+                        hospitality standards to be on Airbnb
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- travel -->
+    
+    <!-- just_booked -->
+    <div class="p-4 mx-auto md:max-w-4xl md:space-y-6 md:mt-5">
+        <h1 class="font-bold text-slate-900 md:text-xl">Just booked in Kampala Uganda</h1>
+
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+
+            <template x-data x-for="1 in 3">
+                <!-- card -->
+                <div class="my-3 overflow-hidden bg-white shadow-md">
+                    <img src="./assets/img/landing.jpeg" class="w-full h-[12rem] bg-contain  " alt="">
+                    <!-- content -->
+                    <div class="p-2 space-y-3">
+
+                        <p class="text-xs font-medium uppercase md:leading-4 ">Entire house -joshua tree</p>
+                        <h1 class="font-bold md:leading-4">The Joshua Tree House</h1>
+                        <p class="text-xs font-medium md:leading-4">Ugx:100,000 per night</p>
+                        <p class="text-xs md:leading-4">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique nobis delectus
+                            repudiandae recusandae, quo atque hic provident tenetur culpa fugit ab minus natus!
+                        </p>
+                        <div class="flex items-center ">
+
+                            <div class="flex items-center">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-4 h-4 text-cyan-900">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-4 h-4 text-cyan-900">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-4 h-4 text-cyan-900">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <span class="ml-2 text-xs">456. Superhost</span>
+
+                        </div>
+                    </div>
+                </div>
+
+            </template>
+        </div>
+
+        <div class="space-y-2 md:space-y-4">
+
+            <p class="font-medium text-cyan-800">Show all (22,000)+</p>
+            <h1 class="font-bold md:text-xl">When are you travelling ?</h1>
+            <p class="text-xs">Add dates for updated pricing and availability</p>
+            <button class="px-3 py-3 text-xs text-white rounded bg-cyan-800">Add Dates</button>
+        </div>
+
+    </div>
+    <!-- just_booked -->
+
+
+
+    <!-- footer -->
+    <div class="text-white bg-slate-800 md:space-y-6 md:mt-5">
+
+        <!-- flex__container -->
+        <div class="justify-between p-2 mt-4 border-b md:p-4 md:max-w-4xl md:mx-auto md:flex border-slate-600">
+
+            <!-- left__side -->
+            <div>
+                <p class="font-bold md:text-xl">Airbnb</p>
+                <ul class="p-2">
+                    <li><a href="#" class="text-xs md:text-base">Careers</a></li>
+                    <li><a href="#" class="text-xs md:text-base">News</a></li>
+                    <li><a href="#" class="text-xs md:text-base">Policies</a></li>
+                    <li><a href="#" class="text-xs md:text-base">Help</a></li>
+                    <li><a href="#" class="text-xs md:text-base">Diversity & Belonging</a></li>
+                </ul>
+
+            </div>
+
+            <!-- midddle__side -->
+            <div>
+                <p class="font-bold md:text-xl">Discover</p>
+                <ul class="p-2">
+                    <li><a href="#" class="text-xs md:text-base">Careers</a></li>
+                    <li><a href="#" class="text-xs md:text-base">News</a></li>
+                    <li><a href="#" class="text-xs md:text-base">Policies</a></li>
+                    <li><a href="#" class="text-xs md:text-base">Help</a></li>
+                    <li><a href="#" class="text-xs md:text-base">Diversity & Belonging</a></li>
+                </ul>
+            </div>
+        </div>
+        
+            <!-- right__side -->
+            <div class="space-y-2 text-center ">
+                <p class="mt-3 text-xs md:text-base">Airbnb</p>
+                <p class="text-xs md:text-base"> 2023 &copy; All rights reserved</p>
+                <p class="text-xs italic">powered by mugerwa</p>
+
+            </div>
+
+        
+    </div>
+
+
+
+</body>
+
+</html>
